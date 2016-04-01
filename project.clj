@@ -3,12 +3,12 @@
   :license {:name "MIT"}
   :description "A simple ClojureScript interface to React"
 
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.145"]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.8.40"]
                  [cljsjs/react-dom "0.14.3-1"]
                  [cljsjs/react-dom-server "0.14.3-0"]]
 
-  :plugins [[lein-cljsbuild "1.1.0"]
+  :plugins [[lein-cljsbuild "1.1.3"]
             [codox "0.9.0"]]
 
   :source-paths ["src"]
@@ -34,6 +34,7 @@
                        :compiler {:source-map true
                                   :source-map-timestamp true
                                   :optimizations :none
+                                  :parallel-build true
                                   :output-dir "outsite/public/js/out"
                                   :asset-path "js/out"}}}}}]
              
