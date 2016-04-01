@@ -34,6 +34,7 @@
                        :compiler {:source-map true
                                   :source-map-timestamp true
                                   :optimizations :none
+                                  :verbose true
                                   :parallel-build true
                                   :output-dir "outsite/public/js/out"
                                   :asset-path "js/out"}}}}}]
